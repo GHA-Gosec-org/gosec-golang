@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Get source code
         uses: cloudbees-io/checkout@v1
-      - name: Setup git credentials
-        uses: cloudbees-io/configure-git-global-credentials@v1
       - name: Login to AWS
         uses: cloudbees-io/configure-aws-credentials@v1
         id: aws-login
